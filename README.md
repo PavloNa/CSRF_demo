@@ -33,17 +33,17 @@ csrf_demo/
 
    ```bash
    git clone <repository_url> csrf_demo
-
+    ```
 2. **Terminal 1**
-
+    ```bash
     cd vulnerable
     php -S localhost:8000
-	
+	```
 3. **Terminal 2**
-
+    ```bash
 	cd malicious
 	php -S localhost:8001
-	
+	```
 4. **Access vulnerable website**
 
 	Open your browser and navigate to http://localhost:8000/index.php. This page displays the current email and includes a form to change it.
