@@ -11,6 +11,7 @@ if (!isset($_SESSION['user_id'])) {
 /* UNCOMMENT
 // Validate CSRF Token
 if (!isset($_POST['csrf_token']) || !validateCsrfToken($_POST['csrf_token'])) {
+    echo "<script>console.log('Invalid CSRF token, attack prevented');</script>";
     die("Invalid CSRF token.");
 }
 */

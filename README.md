@@ -56,6 +56,9 @@ In a new tab, navigate to http://localhost:8001/attack.html. This page loads an 
 
 Go back to the vulnerable website tab (http://localhost:8000/index.php) and refresh the page. The email has now changed to attacker@example.com and you have become a victim! :))
 
+**Fix the attack**
+Uncomment the commented code inside all the files from /vulnerable/
+
 **Important Note**
 This example is for educational purposes only. Do not deploy or test these vulnerabilities on production systems or without proper authorization. Always follow best security practices to protect web applications from such attacks.
 
