@@ -8,7 +8,15 @@ if (!isset($_SESSION['user_id'])) {
     die("Not authenticated.");
 }
 
+/* UNCOMMENT
+// Validate CSRF Token
+if (!isset($_POST['csrf_token']) || !validateCsrfToken($_POST['csrf_token'])) {
+    die("Invalid CSRF token.");
+}
+*/
+
 // Get new email from POST request
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $new_email = $_POST['email'];
 

@@ -26,6 +26,14 @@ $current_email = $stmt->fetchColumn();
         <input type="email" name="email" id="email" required>
         <button type="submit">Change Email</button>
     </form>
+    <!-- FIX FOR THE CSRF attack (UNCOMMENT and remove previous form)
+    <form action="change_email.php" method="POST">
+        <label for="email">New Email:</label>
+        <input type="email" name="email" id="email" required>
+        <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
+        <button type="submit">Change Email</button>
+    </form>
+    -->
     <p>Current Email: <?php echo htmlspecialchars($current_email); ?></p>
 </body>
 </html>
