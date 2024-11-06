@@ -5,7 +5,7 @@
 This example demonstrates a Cross-Site Request Forgery (CSRF) attack using PHP, SQLite, and HTML. It consists of a vulnerable website and a malicious website that performs the attack.
 
 ## Directory Structure
-
+```
 csrf_demo/
 ├── README.md
 ├── db.sqlite
@@ -15,7 +15,7 @@ csrf_demo/
 │   └── db.php
 └── malicious/
     └── attack.html
-
+```
 ## Setup and Running the Example
 
 ### Prerequisites
