@@ -15,6 +15,7 @@ csrf_demo/
 │   └── db.php
 └── malicious/
     └── attack.html
+    └── ifram_attack.html
 ```
 ## Setup and Running the Example
 
