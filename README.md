@@ -52,7 +52,7 @@ csrf_demo/
 
 In a new tab, navigate to http://localhost:8001/attack.html. This page loads an iframe (iframe_attack.html) that automatically submits a POST request to the vulnerable site to change the user's email.
 
-** Refresh the vulnerable website and check the attack **
+6. ** Refresh the vulnerable website and check the attack **
 
 Go back to the vulnerable website tab (http://localhost:8000/index.php) and refresh the page. The email has now changed to attacker@example.com and you have become a victim! :))
 
